@@ -5,7 +5,7 @@ import Arrow from '../Icons/Arrow';
 
 interface PrimaryButtonProps {
   text: string;
-  onPress: any;
+  onPress: () => void;
   primary?: boolean;
   icon?: boolean;
   style?: any;
@@ -51,7 +51,6 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 36,
     borderRadius: 10,
-    // marginVertical: 20,
     overflow: 'hidden',
   },
   buttonInnerContainer: {
